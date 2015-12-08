@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * Describe the Function
+ *
+ * @param 	datatype	$value	Description of the parameter.
+ *
+ * @return 	datatype	Description of the value returned.
+ *
+ * @since 1.0
+ */
+public function functionName($value = null) {
+	
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fund</tabTrigger>
+	<description>PHP: Function with Description</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

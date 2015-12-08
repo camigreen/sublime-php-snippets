@@ -1,15 +1,32 @@
 <snippet>
-    <content><![CDATA[
-${1/.+/\/**\n * /}${1:summary}${1/.+/\n *\/\n//}class ${2:Name}${3/.+/ extends /}${3:ExtendsName}
-{
-    ${4/.+/\/**\n     * /}${4:summary}${4/.+/\n     *\/\n    //}${5:public }function ${6:__construct}($7)
-    {
-        $0
-    }
+	<content><![CDATA[
+/**
+ * @package   Package Name
+ * @author    Shawn Gibbons http://www.palmettoimages.com
+ * @copyright Copyright (C) Shawn Gibbons
+ * @license   
+ */
+
+/**
+ * Class Description
+ *
+ * @package Class Package
+ */
+class ClassName extends ExtendsName {
+
+	/**
+	 * ${1:Class constructor}
+	 *
+	 * @param datatype	\$${2:value}	Parameter Description
+	 */
+	${3:public} function __construct(\$${2:$value} = null) {
+
+	}
 }
 ]]></content>
-    <tabTrigger>class</tabTrigger>
-    <scopeName>language_construct</scopeName>
-    <scope>source.php - comment - constant.other.class - entity.name - meta.catch - meta.class - meta.function.arguments - meta.use - string - variable.other</scope>
-    <description>PHP: class declaration</description>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>class</tabTrigger>
+	<description>PHP: Class with description</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
 </snippet>
